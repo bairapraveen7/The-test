@@ -179,7 +179,7 @@ let d1=prim[kk.charCodeAt(l-1)*kk.charCodeAt(l-2)%(prim.length)];
     var kk3=kk.trim();
     var kk2=kk3.toLowerCase();
    const d=new Date();
-   const misnames=['ravi','chandra','krishna','vamshi','ranga','karna','teja','surya','karthi','vijay','khurana'];
+   const misnames=['ravi','chandra','krishna','vamshi','ranga','karna','teja','surya','karthi','vijay','khurana','uday','pranay','harsha'];
    misnames.map(function(x){
        if(kk2.endsWith(x))
        theboolean=false;

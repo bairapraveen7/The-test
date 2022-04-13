@@ -22,10 +22,11 @@ body{
 }
  
 .img{
-    background-image: url("night.jpg");
-     background-position: center;
-     background-size: 60% 100%;
-     background-repeat: no-repeat;
+    background-image: url(night.jpg);
+    background-position: center;
+    margin-left: 2%;
+    /* background-size: 60% 100%; */
+    background-repeat: no-repeat;
 }
  
  
