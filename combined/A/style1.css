@@ -1,0 +1,131 @@
+@keyframes firing {
+    0% {background-color: #f6f6ec;}
+
+    20% {background-color: #c9c8c4;}
+
+    40% {background-color: #949490;}
+
+    70% {background-color: #676765;}
+
+    100% {background-color: #3a3a39;}
+}
+
+body
+ {
+    animation: firing 6s; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+ 
+
+@keyframes changeit {
+
+    from {background-color: #E0DDAA;}
+    to {background-color:red;}
+    
+}
+
+.demo:hover{
+    transform: scale(1.5);
+    width:30%;
+    margin-left: 35%;
+}
+
+.demo:hover + .list{
+  margin-top: 35px;
+  margin-left: 20%;
+}
+
+.demo:hover ~ .last{
+    margin-left: 20%;
+  }
+
+  @keyframes slide {
+      0% {margin-left: 25%;padding-left: 12rem;}
+
+      
+      100% {margin-left: 35%;padding-left: 2rem;}
+  }
+  .list:hover{
+      animation: slide 4s;
+  }
+
+  @keyframes rollup {
+      from {transform:translate(0px,0px);}
+      to {transform:translate(0px,-310px);}
+  }
+
+    .last:hover{
+        animation:rollup 6s ;
+    }
+
+.demo{
+    font-family: 'Pacifico';
+    height: 25%;
+    padding-top: 25px;
+    width: 65%;
+    margin-left: 25%;
+    text-align: center;
+    background-color: #E0DDAA;
+    animation:changeit 5s;
+    animation-direction: alternate;
+}
+.list{
+    font-family: 'PT Serif';
+    position: relative;
+    right:0px;
+    margin-left: 25%;
+    height: 35%;
+    width: 65%;
+    background-color: #203239;
+    color: wheat;
+}
+
+
+.last{
+    background-color: #141E27;
+    font-family:'Beau Rivage';
+    font-size: 3em;
+    text-align: center;
+    width: 65%;
+    height: 40%;
+    padding: 10%;
+    color: chocolate;
+    margin-left: 25%;
+}
+
+ 
+ 
+.aks{
+    position: relative;
+    width: 30%;
+    top:50px;
+    left:540px;
+    z-index: -1;
+}
+
+
+@keyframes example {
+
+     
+
+        from {padding-left:2rem;color:wheat;}
+
+        to {padding-left:12rem;color:red;}
+       
+}
+
+img{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+ul{
+     animation: example 5s;
+     color:red;
+     animation-direction:  alternate ;
+     padding-left: 3rem;
+}
